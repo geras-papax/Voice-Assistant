@@ -18,7 +18,7 @@ import webbrowser
 from helping import get_audio, speak
 
 def weather():
-    owm = pyowm.OWM('84ecdeb736d7cf30747c9f080e59eb6e',language='el')
+    owm = pyowm.OWM('your api key from open weather',language='el')
     observation = owm.weather_at_place('Dimos Patras, GR ')
     observation_list = owm.weather_around_coords(38.2155, 21.7956)
     w = observation.get_weather()
